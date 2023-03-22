@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <header>
       <div id="logo_welbex">
-        <img src={logo} alt="Логотип" />
+        <img src={logo} alt="Welbex" />
         <p>крупный интегратор CRM в Росcии и ещё 8 странах</p>
       </div>
       <div id="menu">
