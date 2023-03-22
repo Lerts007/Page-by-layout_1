@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 1140px;
+  margin-top: 46px;
+  padding: 13px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#logo_welbex p {
+  width: 120px;
+  height: 24px;
+
+  font-family: Montserrat;
+  font-size: 10px;
+  font-weight: 300;
+  line-height: 12px;
+
+  text-align: justify;
+
+  color: #e4e5ea;
+}
+
+#logo_welbex img {
+  width: 140px;
+  height: 24px;
+}
+
+#menu a {
+  width: 54px;
+  height: 19px;
+  padding-left: 20px;
+
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 16px;
+
+  color: #e4e5ea;
+
+  text-decoration: none;
+}
+
+#contact_information a {
+  width: 143px;
+  height: 19px;
+  margin-right: 32px;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: right;
+
+  color: #e4e5ea;
+
+  text-decoration: none;
+}
+
+#contact_information img {
+  width: 20px;
+  height: 20px;
+}
