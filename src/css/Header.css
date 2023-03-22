@@ -7,8 +7,9 @@ header {
 }
 
 #logo_welbex p {
-  width: 120px;
+  width: 165px;
   height: 24px;
+  padding-right: 25px;
 
   font-family: Montserrat;
   font-size: 10px;
