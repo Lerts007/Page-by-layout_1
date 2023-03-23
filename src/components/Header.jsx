@@ -30,7 +30,6 @@ const Header = () => {
         <a href="https://web.whatsapp.com/">
           <img src={whatsapp} alt="whatsapp" />
         </a>
-        
       </div>
     </header>
   );
