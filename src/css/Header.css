@@ -1,7 +1,6 @@
 header {
   width: 1140px;
   margin-top: 46px;
-  padding: 13px;
   display: flex;
   justify-content: space-between;
 }
@@ -43,7 +42,7 @@ header {
 #contact_information a {
   width: 143px;
   height: 19px;
-  margin-right: 32px;
+  margin-left: 32px;
 
   font-family: Inter;
   font-style: normal;

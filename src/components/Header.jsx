@@ -24,12 +24,13 @@ const Header = () => {
         <a href="https://web.telegram.org">
           <img src={telegram} alt="telegram" />
         </a>
-        <a href="https://web.whatsapp.com/">
-          <img src={whatsapp} alt="whatsapp" />
-        </a>
         <a href="https://www.viber.com/ru/">
           <img src={viber} alt="viber" />
         </a>
+        <a href="https://web.whatsapp.com/">
+          <img src={whatsapp} alt="whatsapp" />
+        </a>
+        
       </div>
     </header>
   );

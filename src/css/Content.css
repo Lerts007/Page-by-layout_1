@@ -38,18 +38,25 @@
   color: #e4e5ea;
 }
 
-#content-rigth{
-  text-align: left;
+#content-right{
+  width: 500px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  text-align: right;
 }
 
 #content-right h2{
   width: 291px;
+
   color: #e4e5ea;
+
   font-family: Inter;
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
-  text-align: right;
 }
 
 #content-right .gradient{
@@ -74,5 +81,32 @@
 }
 
 .gift{
-  display: table;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.gift-block{
+  width: 170px;
+  margin-top: 30px;
+  margin-left: 36px;
+}
+
+button{
+  width: 262px;
+  height: 61px;
+
+  margin-top: 61px;
+  background: #4077F3;
+}
+
+button:hover{
+  border: 2px solid #634040;
+}
+
+button:active {
+  background-color: #333;
+  border-color: #333;
+  color: #eee;
 }
