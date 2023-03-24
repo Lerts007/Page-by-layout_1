@@ -1,4 +1,6 @@
 #content {
+  flex: 1 1 auto;
+
   margin-top: 94px;
   display: flex;
   justify-content: space-between;
@@ -15,7 +17,7 @@
   color: #e4e5ea;
 }
 
-.gradient{
+.gradient {
   background: linear-gradient(92deg, #fcb045 27.14%, #ff3f78 121.36%, #e4e5ea);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -26,7 +28,7 @@
   display: table;
 }
 
-#content-left p  {
+#content-left p {
   width: 275px;
 
   margin-top: 30px;
@@ -38,7 +40,7 @@
   color: #e4e5ea;
 }
 
-#content-right{
+#content-right {
   width: 500px;
 
   display: flex;
@@ -48,7 +50,7 @@
   text-align: right;
 }
 
-#content-right h2{
+#content-right h2 {
   width: 291px;
 
   color: #e4e5ea;
@@ -59,7 +61,7 @@
   line-height: 22px;
 }
 
-#content-right .gradient{
+#content-right .gradient {
   font-weight: 700;
 }
 
@@ -71,7 +73,7 @@
   color: #e4e5ea;
 }
 
-#content-right p{
+#content-right p {
   height: 40px;
   font-family: Montserrat;
   font-weight: 400;
@@ -80,28 +82,28 @@
   color: #e4e5ea;
 }
 
-.gift{
+.gift {
   text-align: right;
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
 }
 
-.gift-block{
+.gift-block {
   width: 170px;
   margin-top: 30px;
   margin-left: 36px;
 }
 
-button{
+button {
   width: 262px;
   height: 61px;
 
   margin-top: 61px;
-  background: #4077F3;
+  background: #4077f3;
 }
 
-button:hover{
+button:hover {
   border: 2px solid #634040;
 }
 

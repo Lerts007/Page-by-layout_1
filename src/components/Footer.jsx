@@ -1,32 +1,37 @@
-import React from 'react';
+import React from "react";
 import telegram from "../img/telegram.png";
 import whatsapp from "../img/whatsapp.png";
 import viber from "../img/viber.png";
+import "../css/Footer.css";
 
 const Footer = () => {
   return (
-    <div>
-      <div>
-        <h4>О компании</h4>
+    <footer>
+      <div class="company">
+        <h4>О КОМПАНИИ</h4>
         <p>Партнёрская программа</p>
         <p>Вакансии</p>
       </div>
-      <div>
-        <h4>Меню</h4>
-        <p>Расчёт стоимости</p>
-        <p>Виджеты</p>
-        <p>Интеграции</p>
-        <p>Наши клиенты</p>
-        <p>Кейсы</p>
-        <p>Благодарственные письма</p>
-        <p>Сертификаты</p>
-        <p>Блог на Youtube</p>
-        <p>Вопрос / Ответ</p>
+      <div class="menu">
+        <h4>МЕНЮ</h4>
+        <div>
+          <p>Расчёт стоимости</p>
+          <p>Виджеты</p>
+          <p>Интеграции</p>
+          <p>Наши клиенты</p>
+          <p>Кейсы</p>
+          <p>Благодарственные письма</p>
+          <p>Сертификаты</p>
+          <p>Блог на Youtube</p>
+          <p>Вопрос / Ответ</p>
+        </div>
       </div>
-      <div>
-        <h4>Контакты</h4>
-        <div id="contact_information">
+      <div class="contacts">
+        <h4>КОНТАКТЫ</h4>
+        <div class="contact_info">
           <a href="tel:+75555555555">+7 555 555-55-55</a>
+        </div>
+        <div class="contact_info">
           <a href="https://web.telegram.org">
             <img src={telegram} alt="telegram" />
           </a>
@@ -38,12 +43,12 @@ const Footer = () => {
           </a>
         </div>
         <p>Москва, Путевой проезд 3с1, к 902</p>
+        <div>
+          <p>©WELBEX 2022. Все права защищены</p>
+          <p>Политика конфиденциальности</p>
+        </div>
       </div>
-      <div>
-        <p>©WELBEX 2022. Все права защищены</p>
-        <p>Политика конфиденциальности</p>
-      </div>
-    </div>
+    </footer>
   );
 };
 

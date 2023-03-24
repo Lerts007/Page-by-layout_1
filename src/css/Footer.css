@@ -1,0 +1,83 @@
+footer {
+  margin-top: 124px;
+  display: flex;
+  justify-content: space-between;
+
+  color: #e4e5ea;
+}
+
+footer h4 {
+  color: #656566;
+
+  margin-bottom: 20px;
+
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+}
+footer p {
+  margin-bottom: 10px;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.company {
+  margin-right: 98px;
+}
+.menu {
+  flex: 1;
+}
+.menu div {
+  height: 145px;
+  flex: 1;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  justify-content: space-between;
+}
+
+.menu div p {
+  margin-right: 52px;
+}
+
+.contacts {
+  display: flex;
+  justify-content: right;
+  flex-direction: column;
+
+  text-align: right;
+}
+
+.contacts a {
+  margin-top: 22px;
+}
+
+.contacts div {
+  margin-top: 22px;
+}
+
+.contact_info a {
+  width: 143px;
+  height: 19px;
+  margin-left: 14px;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: right;
+
+  color: #e4e5ea;
+
+  text-decoration: none;
+}
+.contact_info img {
+  width: 16px;
+  height: 16px;
+}

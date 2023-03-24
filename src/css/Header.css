@@ -25,6 +25,10 @@ header {
   height: 24px;
 }
 
+#menu {
+  flex: 1;
+}
+
 #menu a {
   width: 54px;
   height: 19px;
