@@ -7,12 +7,12 @@ import "../css/Footer.css";
 const Footer = () => {
   return (
     <footer>
-      <div class="company">
+      <div className="company">
         <h4>О КОМПАНИИ</h4>
         <p>Партнёрская программа</p>
         <p>Вакансии</p>
       </div>
-      <div class="menu">
+      <div className="menu">
         <h4>МЕНЮ</h4>
         <div>
           <p>Расчёт стоимости</p>
@@ -26,12 +26,12 @@ const Footer = () => {
           <p>Вопрос / Ответ</p>
         </div>
       </div>
-      <div class="contacts">
+      <div className="contacts">
         <h4>КОНТАКТЫ</h4>
-        <div class="contact_info">
+        <div className="contact_info">
           <a href="tel:+75555555555">+7 555 555-55-55</a>
         </div>
-        <div class="contact_info">
+        <div className="contact_info">
           <a href="https://web.telegram.org">
             <img src={telegram} alt="telegram" />
           </a>
@@ -43,9 +43,9 @@ const Footer = () => {
           </a>
         </div>
         <p>Москва, Путевой проезд 3с1, к 902</p>
-        <div>
+        <div className = "privacy">
           <p>©WELBEX 2022. Все права защищены</p>
-          <p>Политика конфиденциальности</p>
+          <a href = "/">Политика конфиденциальности</a>
         </div>
       </div>
     </footer>

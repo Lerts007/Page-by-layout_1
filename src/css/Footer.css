@@ -16,7 +16,7 @@ footer h4 {
   font-size: 14px;
   line-height: 17px;
 }
-footer p {
+footer .company, .menu p {
   margin-bottom: 10px;
   font-family: "Inter";
   font-weight: 400;
@@ -61,6 +61,10 @@ footer p {
   margin-top: 22px;
 }
 
+.contacts p{ 
+  margin-top: 22px;
+}
+
 .contact_info a {
   width: 143px;
   height: 19px;
@@ -80,4 +84,24 @@ footer p {
 .contact_info img {
   width: 16px;
   height: 16px;
+}
+
+.privacy {
+  margin-top: 70px;
+}
+
+.privacy p {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.privacy a {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #e4e5ea;
+
 }
