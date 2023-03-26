@@ -6,27 +6,31 @@ const Content = () => {
     <div id="content">
       <div id='content-left'>
         <h1>
-          Зарабатывайте больше<span claclassNamess ="gradient">с WELBEX</span>
+          Зарабатывайте больше<span className ="gradient">с WELBEX</span>
         </h1>
         <p>Развиваем и контролируем продажи за вас</p>
       </div>
       <div id="content-right">
-        <h2>Вместе с <span className ="gradient">БЕСПЛАТНОЙ КОНСУЛЬТАЦИЕЙ</span> мы дарим:</h2>
+        <h2>Вместе с <span className ="gradient"> БЕСПЛАТНОЙ КОНСУЛЬТАЦИЕЙ </span> мы дарим:</h2>
         <div className="gift">
           <div className="gift-block">
-            <h3>ВИДЖЕТЫ</h3>
+            <div className="Line-9"></div>
+            <h3 className="gift-block-1"><span>ВИДЖЕТЫ</span></h3>
             <p>30 готовых решений </p>
           </div>
           <div className="gift-block">
-            <h3>DASHBOARD</h3>
+          <div className="Line-9"></div>
+            <h3 className="gift-block-2"><span>DASHBOARD</span></h3>
             <p>с показателми вашего бизнеса</p>
           </div>
           <div className="gift-block">
-            <h3>Skype Аудит</h3>
+          <div className="Line-9"></div>
+            <h3 className="gift-block-3"><span>Skype Аудит</span></h3>
             <p>отдела продаж и CRM системы</p>
           </div>
           <div className="gift-block">
-            <h3>35 дней</h3>
+          <div className="Line-9"></div>
+            <h3 className="gift-block-4"><span>35 дней</span></h3>
             <p>использования CRM</p>
           </div>
         </div>
@@ -37,3 +41,4 @@ const Content = () => {
 };
 
 export default Content;
+

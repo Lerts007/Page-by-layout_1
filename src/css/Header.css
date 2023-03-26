@@ -1,4 +1,6 @@
 header {
+  position: relative;
+  z-index: 2;
   width: 1140px;
   margin-top: 46px;
   display: flex;
@@ -30,7 +32,6 @@ header {
 }
 
 #menu a {
-  width: 54px;
   height: 19px;
   padding-left: 20px;
 
@@ -44,7 +45,6 @@ header {
 }
 
 #contact_information a {
-  width: 143px;
   height: 19px;
   margin-left: 32px;
 
@@ -63,4 +63,89 @@ header {
 #contact_information img {
   width: 20px;
   height: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  header {
+    width: 900px;
+  }
+
+  #menu a {
+    font-size: 14px;
+  }
+
+  #contact_information a {
+    font-size: 14px;
+  }
+
+  #contact_information img {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+@media screen and (max-width: 968px) {
+  header {
+    width: 756px;
+  }
+
+  #menu a {
+    font-size: 14px;
+  }
+
+  #contact_information {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #contact_information a {
+    font-size: 14px;
+  }
+
+  #contact_information img {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+@media screen and (max-width: 796px) {
+  header {
+    width: 100%;
+
+    background: #1e1e1e;
+    margin-top: 0px;
+    height: 55px;
+    justify-content: center;
+    align-items: center;
+
+    text-transform: uppercase;
+  }
+
+  #menu {
+    display: flex;
+    justify-content: center;
+  }
+
+  #menu a {
+    margin-left: 10px;
+    font-size: 14px;
+  }
+
+  #logo_welbex,
+  #contact_information {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  header #menu a:last-child {
+    display: none;
+  }
+
+  header #menu a {
+    margin-left: 15px;
+    padding-left: 0;
+    font-size: 12px;
+  }
 }

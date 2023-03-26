@@ -1,4 +1,5 @@
 import React from "react";
+import BackgroundBall from "./components/BackgroundBall";
 import Content from "./components/Content";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <Content />
       <Footer />
+      <BackgroundBall />
     </div>
   );
 }

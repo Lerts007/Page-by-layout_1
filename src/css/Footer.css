@@ -1,4 +1,6 @@
 footer {
+  position: relative;
+  z-index: 2;
   margin-top: 124px;
   display: flex;
   justify-content: space-between;
@@ -16,8 +18,10 @@ footer h4 {
   font-size: 14px;
   line-height: 17px;
 }
-footer .company, .menu p {
+footer .company p,
+.menu p {
   margin-bottom: 10px;
+
   font-family: "Inter";
   font-weight: 400;
   font-size: 16px;
@@ -57,17 +61,16 @@ footer .company, .menu p {
   margin-top: 22px;
 }
 
-.contacts div {
+.contact_info,
+.contact_info p {
   margin-top: 22px;
 }
 
-.contacts p{ 
-  margin-top: 22px;
-}
-
-.contact_info a {
+.contact_info a,
+.contact_info_tell a {
   width: 143px;
   height: 19px;
+
   margin-left: 14px;
 
   font-family: Inter;
@@ -103,5 +106,132 @@ footer .company, .menu p {
   font-size: 12px;
   line-height: 15px;
   color: #e4e5ea;
+}
 
+@media screen and (max-width: 1200px) {
+  footer .company,
+  .menu p,
+  .contact_info a,
+  .contact_info_tell a,
+  .contact_info p {
+    font-size: 14px;
+  }
+
+  .contact_info img {
+    width: 14px;
+    height: 14px;
+  }
+
+  .privacy a {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 968px) {
+  footer .company,
+  .menu p,
+  .contact_info a,
+  .contact_info_tell a,
+  .contact_info p {
+    font-size: 12px;
+  }
+
+  .company {
+    margin-right: 58px;
+  }
+
+  .privacy a,
+  .privacy p {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  footer .company p,
+  .menu p,
+  .contact_info a,
+  .contact_info_tell a,
+  .contact_info p {
+    font-size: 14px;
+  }
+
+  .contact_info img {
+    width: 14px;
+    height: 14px;
+  }
+
+  .privacy a {
+    font-size: 10px;
+  }
+  .company,
+  .menu,
+  .contacts {
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 0;
+  }
+
+  .menu div p {
+    margin-right: 20px;
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 968px) {
+  .menu div {
+    height: 165px;
+  }
+  .menu div p {
+    width: 120px;
+  }
+
+  .menu-1 span,
+  .menu-2 span {
+    display: none;
+  }
+
+  .menu-1::after {
+    content: "Благодарность клиентов";
+  }
+
+  .menu-2::after {
+    content: "Кейсы";
+  }
+}
+
+@media screen and (max-width: 796px) {
+  footer {
+    background: #1e1e1e;
+    flex-direction: column;
+    margin-top: 59px;
+  }
+
+  .company,
+  .menu,
+  .contacts {
+    margin-top: 40px;
+    margin-left: 20px;
+  }
+
+  .contacts {
+    justify-content: left;
+    text-align: left;
+  }
+
+  .company {
+    margin-right: 30px;
+  }
+
+  .menu div p {
+    margin-right: 20px;
+  }
+
+  .contact_info a,
+  .contact_info_tell a {
+    margin-left: 0;
+    margin-right: 14px;
+  }
+  .privacy a,
+  .privacy p {
+    font-size: 10px;
+  }
 }

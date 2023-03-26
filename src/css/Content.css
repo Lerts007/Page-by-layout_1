@@ -1,4 +1,6 @@
 #content {
+  position: relative;
+  z-index: 2;
   flex: 1 1 auto;
 
   margin-top: 94px;
@@ -73,6 +75,11 @@
   color: #e4e5ea;
 }
 
+#content-right .gift-block .gradient {
+  display: none;
+  font-weight: 900;
+}
+
 #content-right p {
   height: 40px;
   font-family: Montserrat;
@@ -111,4 +118,180 @@ button:active {
   background-color: #333;
   border-color: #333;
   color: #eee;
+}
+
+@media screen and (max-width: 1200px) {
+  #content-right {
+    width: 394px;
+  }
+
+  .gift-block {
+    width: 120px;
+    margin-left: 36px;
+  }
+
+  button {
+    width: 200px;
+  }
+
+  #content-right p {
+    font-size: 14px;
+  }
+
+  #content-left p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 796px) {
+  #content {
+    width: 100%;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  #content-right,
+  #content-left {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  #content-left h1,
+  #content-left h1 span {
+    width: 100%;
+    margin: 0 15px 0 0;
+    text-align: center;
+  }
+
+  #content-left p {
+    width: 450px;
+    margin: 15px 15px 0 0;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  #content-right {
+    text-align: center;
+    align-items: center;
+    margin: 45px 0 0 0;
+  }
+
+  .gift {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .gift-block {
+    margin-left: 36px;
+  }
+
+  #content-right p {
+    font-size: 14px;
+  }
+
+  button {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #content-left {
+    justify-content: left;
+  }
+
+  #content-left h1 {
+    margin: 0 0 0 15px;
+  }
+
+  #content-left h1,
+  #content-left h1 span {
+    width: 100%;
+    font-size: 36px;
+    text-align: left;
+  }
+
+  #content-left p {
+    width: 450px;
+    margin: 15px 15px 0 15px;
+    font-size: 18px;
+    text-align: left;
+  }
+
+  #content-right {
+    text-align: left;
+    align-items: unset;
+    justify-self: unset;
+    margin: 45px 0 0 0;
+  }
+  #content-right h2,
+  #content_right .gift {
+    margin-left: 15px;
+  }
+
+  #content-right h3 {
+    font-size: 13px;
+  }
+
+  .gift {
+    justify-content: unset;
+  }
+
+  #content-right .gift-block .gradient {
+    display: block;
+  }
+
+  #content-right .gift-block p {
+    display: none;
+  }
+
+  .gift {
+    margin-left: 15px;
+  }
+
+  .gift-block {
+    width: 145px;
+    display: flex;
+    font-size: 13px;
+    margin-left: 0;
+  }
+
+  #content-right h3 {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  button {
+    display: none;
+  }
+
+  h3 span {
+    display: none;
+  }
+
+  .gift-block-1::after {
+    content: "SKYPE АУДИТ";
+  }
+  .gift-block-2::after {
+    content: "30 виджетов";
+    text-transform: uppercase;
+  }
+  .gift-block-3::after {
+    content: "Dashboard";
+    text-transform: uppercase;
+  }
+  .gift-block-4::after {
+    content: "Месяц аmoCRM";
+    text-transform: uppercase;
+  }
+
+  .Line-9 {
+    width: 10px;
+    height: 1px;
+    margin-top: 8px;
+    margin-right: 5px;
+    background: linear-gradient(90deg, #fcb045 36.99%, #fd1d1d 100%);
+  }
 }

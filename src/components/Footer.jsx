@@ -16,11 +16,12 @@ const Footer = () => {
         <h4>МЕНЮ</h4>
         <div>
           <p>Расчёт стоимости</p>
+          <p>Услуги</p>
           <p>Виджеты</p>
           <p>Интеграции</p>
           <p>Наши клиенты</p>
-          <p>Кейсы</p>
-          <p>Благодарственные письма</p>
+          <p className="menu-1"><span>Кейсы</span></p>
+          <p className="menu-2"><span>Благодарственные письма</span></p>
           <p>Сертификаты</p>
           <p>Блог на Youtube</p>
           <p>Вопрос / Ответ</p>
@@ -28,7 +29,7 @@ const Footer = () => {
       </div>
       <div className="contacts">
         <h4>КОНТАКТЫ</h4>
-        <div className="contact_info">
+        <div className="contact_info_tell">
           <a href="tel:+75555555555">+7 555 555-55-55</a>
         </div>
         <div className="contact_info">
@@ -41,8 +42,9 @@ const Footer = () => {
           <a href="https://web.whatsapp.com/">
             <img src={whatsapp} alt="whatsapp" />
           </a>
-        </div>
         <p>Москва, Путевой проезд 3с1, к 902</p>
+
+        </div>
         <div className = "privacy">
           <p>©WELBEX 2022. Все права защищены</p>
           <a href = "/">Политика конфиденциальности</a>
