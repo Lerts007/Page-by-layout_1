@@ -1,68 +1,64 @@
+header .a {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--text-color);
+}
+
+header p {
+  font-family: "Montserrat";
+  font-size: 10px;
+  font-weight: 300;
+  color: var(--text-color);
+}
+
+:root {
+  --text-color: #e4e5ea;
+}
+
 header {
   position: relative;
   z-index: 2;
+
   width: 1140px;
-  margin-top: 46px;
+
+  margin-top: 57px;
+
   display: flex;
   justify-content: space-between;
 }
 
 #logo_welbex p {
-  width: 165px;
-  height: 24px;
-  padding-right: 25px;
-
-  font-family: Montserrat;
-  font-size: 10px;
-  font-weight: 300;
-  line-height: 12px;
-
-  text-align: justify;
-
-  color: #e4e5ea;
-}
-
-#logo_welbex img {
   width: 140px;
   height: 24px;
+
+  margin-top: 7px;
 }
 
 #menu {
-  flex: 1;
+  flex: 1 0 auto;
+
+  margin-top: 3px;
+  margin-left: 22px;
 }
 
 #menu a {
-  height: 19px;
-  padding-left: 20px;
-
-  font-family: Inter;
-  font-weight: 500;
-  font-size: 16px;
-
-  color: #e4e5ea;
+  margin-left: 30px;
 
   text-decoration: none;
 }
 
 #contact_information a {
-  height: 19px;
-  margin-left: 32px;
-
-  font-family: Inter;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
   text-align: right;
-
-  color: #e4e5ea;
-
   text-decoration: none;
+}
+.tell {
+  padding-right: 15px;
 }
 
 #contact_information img {
-  width: 20px;
-  height: 20px;
+  padding-top: 5px;
+  margin-left: 33px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -70,11 +66,7 @@ header {
     width: 900px;
   }
 
-  #menu a {
-    font-size: 14px;
-  }
-
-  #contact_information a {
+  .a {
     font-size: 14px;
   }
 
@@ -89,18 +81,10 @@ header {
     width: 756px;
   }
 
-  #menu a {
-    font-size: 14px;
-  }
-
   #contact_information {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  }
-
-  #contact_information a {
-    font-size: 14px;
   }
 
   #contact_information img {
@@ -129,7 +113,6 @@ header {
 
   #menu a {
     margin-left: 10px;
-    font-size: 14px;
   }
 
   #logo_welbex,

@@ -1,7 +1,7 @@
 import React from "react";
-import telegram from "../img/telegram.png";
-import whatsapp from "../img/whatsapp.png";
-import viber from "../img/viber.png";
+import telegram from "../img/telegram.svg";
+import whatsapp from "../img/whatsapp.svg";
+import viber from "../img/viber.svg";
 import "../css/Footer.css";
 
 const Footer = () => {
@@ -20,8 +20,12 @@ const Footer = () => {
           <p>Виджеты</p>
           <p>Интеграции</p>
           <p>Наши клиенты</p>
-          <p className="menu-1"><span>Кейсы</span></p>
-          <p className="menu-2"><span>Благодарственные письма</span></p>
+          <p className="menu-1">
+            <span>Кейсы</span>
+          </p>
+          <p className="menu-2">
+            <span>Благодарственные письма</span>
+          </p>
           <p>Сертификаты</p>
           <p>Блог на Youtube</p>
           <p>Вопрос / Ответ</p>
@@ -42,12 +46,11 @@ const Footer = () => {
           <a href="https://web.whatsapp.com/">
             <img src={whatsapp} alt="whatsapp" />
           </a>
-        <p>Москва, Путевой проезд 3с1, к 902</p>
-
+          <p>Москва, Путевой проезд 3с1, к 902</p>
         </div>
-        <div className = "privacy">
+        <div className="privacy">
           <p>©WELBEX 2022. Все права защищены</p>
-          <a href = "/">Политика конфиденциальности</a>
+          <a href="/">Политика конфиденциальности</a>
         </div>
       </div>
     </footer>

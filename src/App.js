@@ -2,7 +2,7 @@ import React from "react";
 import BackgroundBall from "./components/BackgroundBall";
 import Content from "./components/Content";
 import Footer from "./components/Footer";
-import Header from "./components/Header";
+import Header from "./components/Header/Header";
 import "./css/App.css";
 
 function App() {
