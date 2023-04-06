@@ -60,14 +60,23 @@ header {
 
 @media screen and (max-width: 1200px) {
   header {
-    width: 900px;
+    max-width: 900px;
   }
 
-  .a {
+  header .a {
     font-size: 14px;
   }
 
+  #menu a {
+    margin-left: 20px;
+  }
+
+  #contact_information {
+    margin-top: 3px;
+  }
+
   #contact_information img {
+    margin-left: 20px;
     width: 14px;
     height: 14px;
   }

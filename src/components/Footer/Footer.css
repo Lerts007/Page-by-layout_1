@@ -1,27 +1,27 @@
 footer {
   position: relative;
   z-index: 2;
-  margin-top: 124px;
+  max-width: 1140px;
+
+  margin: 124px auto 0;
   display: flex;
   justify-content: space-between;
 
-  color: #e4e5ea;
+  color: var(--text-color);
 }
 
-footer h4 {
-  color: #656566;
+.footer-h4 {
+  color: var(--grey-color);
 
   margin-bottom: 20px;
 
   font-family: "Inter";
   font-weight: 700;
   font-size: 14px;
-  line-height: 17px;
-}
-footer .company p,
-.menu p {
-  margin-bottom: 10px;
 
+  letter-spacing: 0.049em;
+}
+footer p {
   font-family: "Inter";
   font-weight: 400;
   font-size: 16px;
@@ -31,22 +31,20 @@ footer .company p,
 .company {
   margin-right: 98px;
 }
+
+.company p {
+  margin-bottom: 10px;
+}
 .menu {
   flex: 1;
 }
 .menu div {
-  height: 145px;
-  flex: 1;
-
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-
-  justify-content: space-between;
-}
-
-.menu div p {
-  margin-right: 52px;
+  max-width: 500px;
+  display: grid;
+  grid-template-columns: 150px 212px;
+  grid-template-rows: repeat(5, 1fr);
+  column-gap: 46px;
+  row-gap: 10px;
 }
 
 .contacts {
@@ -57,13 +55,13 @@ footer .company p,
   text-align: right;
 }
 
-.contacts a {
+.contacts a,
+.contact_info {
   margin-top: 22px;
 }
 
-.contact_info,
 .contact_info p {
-  margin-top: 22px;
+  margin-top: 19px;
 }
 
 .contact_info a,
@@ -80,7 +78,7 @@ footer .company p,
   line-height: 19px;
   text-align: right;
 
-  color: #e4e5ea;
+  color: var(--text-color);
 
   text-decoration: none;
 }
@@ -90,30 +88,30 @@ footer .company p,
 }
 
 .privacy {
-  margin-top: 70px;
+  margin-top: 66px;
 }
 
 .privacy p {
   font-family: "Montserrat";
   font-weight: 400;
   font-size: 12px;
-  line-height: 15px;
 }
 
 .privacy a {
   font-family: "Montserrat";
   font-weight: 400;
   font-size: 12px;
-  line-height: 15px;
-  color: #e4e5ea;
+  color: var(--text-color);
 }
 
 @media screen and (max-width: 1200px) {
-  footer .company,
-  .menu p,
-  .contact_info a,
-  .contact_info_tell a,
-  .contact_info p {
+  footer {
+    max-width: 900px;
+
+    margin: 124px auto 0;
+  }
+  footer a,
+  footer p {
     font-size: 14px;
   }
 
@@ -128,11 +126,11 @@ footer .company p,
 }
 
 @media screen and (max-width: 968px) {
-  footer .company,
-  .menu p,
-  .contact_info a,
-  .contact_info_tell a,
-  .contact_info p {
+  footer {
+    max-width: 756px;
+  }
+  footer a,
+  footer p {
     font-size: 12px;
   }
 
@@ -144,39 +142,6 @@ footer .company p,
   .privacy p {
     font-size: 10px;
   }
-}
-
-@media screen and (max-width: 1200px) {
-  footer .company p,
-  .menu p,
-  .contact_info a,
-  .contact_info_tell a,
-  .contact_info p {
-    font-size: 14px;
-  }
-
-  .contact_info img {
-    width: 14px;
-    height: 14px;
-  }
-
-  .privacy a {
-    font-size: 10px;
-  }
-  .company,
-  .menu,
-  .contacts {
-    margin-top: 40px;
-    margin-left: 20px;
-    margin-right: 0;
-  }
-
-  .menu div p {
-    margin-right: 20px;
-    overflow: hidden;
-  }
-}
-@media screen and (max-width: 968px) {
   .menu div {
     height: 165px;
   }

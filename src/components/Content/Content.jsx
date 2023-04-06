@@ -24,14 +24,14 @@ const Content = () => {
           <div className="gift-block">
             <div className="Line-9"></div>
             <h3 className="gift-block-1 gift-block-h3">
-              <span>ВИДЖЕТЫ</span>
+              <span>Виджеты</span>
             </h3>
             <p className="gift-block-p">30 готовых решений </p>
           </div>
           <div className="gift-block">
             <div className="Line-9"></div>
             <h3 className="gift-block-2 gift-block-h3">
-              <span>DASHBOARD</span>
+              <span>Dashboard</span>
             </h3>
             <p className="gift-block-p">с показателями вашего бизнеса</p>
           </div>
