@@ -33,13 +33,13 @@ const Header = () => {
         <a className="a tell" href="tel:+75555555555">
           +7 555 555-55-55
         </a>
-        <a className="a" href="https://web.telegram.org">
+        <a className="a a_icon" href="https://web.telegram.org">
           <img src={telegram} alt="telegram" />
         </a>
-        <a className="a" href="https://www.viber.com/ru/">
+        <a className="a a_icon" href="https://www.viber.com/ru/">
           <img src={viber} alt="viber" />
         </a>
-        <a className="a" href="https://web.whatsapp.com/">
+        <a className="a a_icon" href="https://web.whatsapp.com/">
           <img src={whatsapp} alt="whatsapp" />
         </a>
       </div>

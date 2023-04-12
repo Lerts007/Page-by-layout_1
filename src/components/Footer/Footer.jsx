@@ -37,13 +37,13 @@ const Footer = () => {
           <a href="tel:+75555555555">+7 555 555-55-55</a>
         </div>
         <div className="contact_info">
-          <a href="https://web.telegram.org">
+          <a className="contacts_img" href="https://web.telegram.org">
             <img src={telegram} alt="telegram" />
           </a>
-          <a href="https://www.viber.com/ru/">
+          <a className="contacts_img" href="https://www.viber.com/ru/">
             <img src={viber} alt="viber" />
           </a>
-          <a href="https://web.whatsapp.com/">
+          <a className="contacts_img" href="https://web.whatsapp.com/">
             <img src={whatsapp} alt="whatsapp" />
           </a>
           <p>Москва, Путевой проезд 3с1, к 902</p>

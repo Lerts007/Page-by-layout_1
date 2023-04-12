@@ -53,7 +53,7 @@
 }
 
 #content-right {
-  max-width: 500px;
+  width: 500px;
   margin-top: 15px;
 
   display: flex;
@@ -89,13 +89,9 @@
 .gift {
   margin-top: 40px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 135px 135px;
   column-gap: 30px;
   row-gap: 31px;
-}
-
-.gift-block {
-  width: 135px;
 }
 
 .gift-block-h3 {
@@ -154,79 +150,49 @@ button:active {
 
 @media screen and (max-width: 796px) {
   #content {
-    width: 100%;
-    margin-top: 40px;
+    margin: 0;
+    justify-content: unset;
+    align-items: flex-start;
+    padding: 0 15px;
+    max-width: 100%;
+  }
+
+  #content-left {
+    width: 50%;
+    margin: 40px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
   }
 
   #content-left h1,
-  #content-left h1 span {
-    width: 100%;
-    margin: 0 15px 0 0;
-    text-align: center;
+  .gradient-left {
+    margin: 0 auto;
+    font-size: 36px;
   }
 
   #content-left p {
-    width: 450px;
-    margin: 15px 15px 0 0;
+    margin: 15px 0 0;
     font-size: 18px;
   }
 
+  #content-left h1,
+  #content-left p {
+    text-align: center;
+  }
+
   #content-right {
+    width: 50%;
+    margin: 40px 0 0 0;
+
+    align-items: center;
+  }
+
+  #content-right h2 {
     text-align: center;
     align-items: center;
-    margin: 45px 0 0 0;
-  }
-
-  .gift {
     justify-content: center;
-    text-align: center;
-  }
-
-  .gift-block {
-    margin-left: 36px;
-  }
-
-  #content-right p {
-    font-size: 14px;
-  }
-
-  button {
-    width: 200px;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  #content-left {
-    justify-content: left;
-  }
-
-  #content-left h1 {
-    margin: 0 0 0 15px;
-  }
-
-  #content-left h1,
-  #content-left h1 span {
-    width: 100%;
-    font-size: 36px;
-    text-align: left;
-  }
-
-  #content-left p {
-    width: 450px;
-    margin: 15px 15px 0 15px;
-    font-size: 18px;
-    text-align: left;
-  }
-
-  #content-right {
-    text-align: left;
-    align-items: unset;
-    justify-self: unset;
-    margin: 45px 0 0 0;
-  }
-  #content-right h2,
-  #content_right .gift {
-    margin-left: 15px;
   }
 
   #content-right h3 {
@@ -234,33 +200,86 @@ button:active {
   }
 
   .gift {
-    justify-content: unset;
+    margin: 20px 0 0 0;
+    gap: 20px;
   }
 
-  #content-right .gift-block .gradient {
-    display: block;
+  button {
+    margin: 30px 0 0 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #content {
+    flex-direction: column;
+  }
+  #content-left {
+    width: 100%;
+    margin-top: 40px;
+    align-items: center;
   }
 
-  #content-right .gift-block p {
-    display: none;
+  #content-left h1 {
+    line-height: 44px;
   }
 
-  .gift {
-    margin-left: 15px;
+  #content-left h1,
+  .gradient-left {
+    text-align: center;
   }
 
-  .gift-block {
-    width: 145px;
-    display: flex;
-    font-size: 13px;
-    margin-left: 0;
+  .gradient-left {
+    margin: 0 auto;
+  }
+
+  #content-left p {
+    margin: 15px 0 0 0;
+    font-size: 18px;
+    text-align: left;
+  }
+
+  #content-right {
+    width: 100%;
+    align-items: center;
+    margin: 45px 0 0 0;
+  }
+
+  #content-right h2 {
+    text-align: left;
+  }
+  .gradient-right {
+    text-transform: none;
+    letter-spacing: normal;
   }
 
   #content-right h3 {
     font-family: "Montserrat";
     font-weight: 400;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 16px;
+    letter-spacing: 0.05em;
+  }
+
+  .gift {
+    grid-template-columns: 115px 145px;
+
+    column-gap: 10px;
+    row-gap: 14px;
+  }
+
+  .gift-block {
+    display: flex;
+  }
+
+  .Line-9 {
+    width: 10px;
+    height: 1px;
+    margin: 7px 5px 0 0;
+    background: linear-gradient(90deg, #fcb045 36.99%, #fd1d1d 100%);
+  }
+
+  #content-right .gift-block p {
+    display: none;
   }
 
   button {
@@ -285,13 +304,5 @@ button:active {
   .gift-block-4::after {
     content: "Месяц аmoCRM";
     text-transform: uppercase;
-  }
-
-  .Line-9 {
-    width: 10px;
-    height: 1px;
-    margin-top: 8px;
-    margin-right: 5px;
-    background: linear-gradient(90deg, #fcb045 36.99%, #fd1d1d 100%);
   }
 }

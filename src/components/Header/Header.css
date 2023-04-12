@@ -3,6 +3,7 @@ header .a {
   font-weight: 500;
   font-size: 16px;
   color: var(--text-color);
+  text-decoration: none;
 }
 
 header p {
@@ -38,24 +39,26 @@ header {
   margin-left: 22px;
 }
 
-#menu a {
+#menu .a {
   margin-left: 30px;
   padding-right: 1px;
 
   text-decoration: none;
 }
 
-#contact_information a {
+#contact_information .a_icon {
+  margin-right: 34px;
   text-align: right;
-  text-decoration: none;
+}
+#contact_information .a:last-child {
+  margin-right: 0;
 }
 .tell {
-  padding-right: 15px;
+  margin-right: 47px;
 }
 
 #contact_information img {
   padding-top: 2px;
-  margin-left: 33px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -67,16 +70,20 @@ header {
     font-size: 14px;
   }
 
-  #menu a {
-    margin-left: 20px;
-  }
-
   #contact_information {
+    margin-left: 20px;
     margin-top: 3px;
   }
 
+  #contact_information .a_icon {
+    margin-right: 10px;
+  }
+
+  #contact_information .tell {
+    margin-right: 20px;
+  }
+
   #contact_information img {
-    margin-left: 20px;
     width: 14px;
     height: 14px;
   }
@@ -88,14 +95,7 @@ header {
   }
 
   #contact_information {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  #contact_information img {
-    width: 14px;
-    height: 14px;
+    display: none;
   }
 }
 
@@ -117,7 +117,7 @@ header {
     justify-content: center;
   }
 
-  #menu a {
+  header .a {
     margin-left: 10px;
   }
 
@@ -128,13 +128,29 @@ header {
 }
 
 @media screen and (max-width: 576px) {
-  header #menu a:last-child {
+  header .a {
+    padding: 0;
+    font-size: 12px;
+  }
+
+  header .a:first-child {
+    margin-left: 0;
+  }
+
+  header .a:last-child {
     display: none;
   }
 
-  header #menu a {
+  #menu {
+    margin: 0;
+    padding: 20px 16px;
+  }
+
+  #menu .a {
     margin-left: 15px;
-    padding-left: 0;
-    font-size: 12px;
+  }
+
+  #menu .a:first-child {
+    margin-left: 0;
   }
 }
